@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Atributos comunes</title>
-  <style>
-    .parrafo1{
-      color: red;
-    }
-  </style>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Atributos comunes</title>
+    <style>
+      .parrafo1 {
+        color: red;
+      }
+    </style>
+  </head>
 
   <!-- 
     Algunos atributos globales que están disponibles para la mayoría de etiquetas en HTML.
 
     class -> Este atributo se utiliza para dar estilos através de CSS.
     id -> Es un identificador ÚNICO (no se puede repetir) que se utiliza para seleccionar el elemento desde JS y para hacer navegación através de anclas.
-    tittle -> Es un atributo que ayuda a la accesibilidad mostrando una descripción del elemento al que pertenece. Aparece el mensaje en un tooltip.
+    title -> Es un atributo que ayuda a la accesibilidad mostrando una descripción del elemento al que pertenece. Aparece el mensaje en un tooltip.
     data-* -> Es un atributo que nos permite guardar algún valor en la etiqueta HTML. (Para JavaScript).
    -->
 
-<body>
-  <p class="parrafo1">Clases</p>
-  <p id="parrafo">identificador através de un ID</p>
-  <p title="Este es un ejemplo del atributo title">Título con tooltip</p>
-  <p id="parrafo-2" data-ejemplo="Datos de ejemplo">Datos pasados en la etiqueta</p>
+  <body>
+    <p class="parrafo1">Clases</p>
+    <p id="parrafo">identificador através de un ID</p>
+    <p title="Este es un ejemplo del atributo title">Título con tooltip</p>
+    <p id="parrafo-2" data-ejemplo="Datos de ejemplo">Datos pasados en la etiqueta</p>
 
-  <script>
-    const p = document.getElementById('parrafo')
-    const parrafo2 = document.getElementById('parrafo-2')
+    <script>
+      const p = document.getElementById("parrafo");
+      const parrafo2 = document.getElementById("parrafo-2");
 
-    console.log(p.textContent)
-    console.log(parrafo2.dataset.ejemplo)
-  </script>
-</body>
+      console.log(p.textContent);
+      console.log(parrafo2.dataset.ejemplo);
+    </script>
+  </body>
 </html>
